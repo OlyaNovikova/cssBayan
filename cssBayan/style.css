@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+p,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Montserrat";
+}
+
+.accordion {
+    max-width: 800px;
+    min-height: 920px;
+    margin: 0 auto;
+}
+
+.accordion__title {
+    font-size: 100px;
+    text-align: center;
+}
+
+.accordion__title:hover {
+    background: red;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accordion-item__text {
+    font-size: 50px;
+    margin: 20px auto;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.accordion-item__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-item__text:hover {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.strelka-bottom-3 path {
+    fill: orange;
+}
+
+.gradient {
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+}
+
+.accordion_img {
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    min-height: 300px;
+}
+
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: 300px;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+}
